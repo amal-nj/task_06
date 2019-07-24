@@ -6,6 +6,8 @@ List
 <link rel="stylesheet" href="{%static 'style.css'%}">
 {% endblock %}
 {%block body%}
+    <div class="row">
+
         {% for restaurant in restaurants %}
                 <div class="card text-center col-lg-4" style="width: 18rem;">
                         <!--<img src="..." class="card-img-top" alt="...">-->
@@ -16,6 +18,7 @@ List
                         </div>
                 </div>
         {% endfor %}
+        </div>
 {%endblock%}
 
 

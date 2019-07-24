@@ -3,10 +3,17 @@
 Detail
 {% endblock %}
 {%block body%}
-     <ul>
-            <li>{{restaurant.name}}</li>
-            <li>{{restaurant.description}}</li>
-            <li>{{restaurant.opening_time}}</li>
-            <li>{{restaurant.closing_time}}</li>
-        </ul>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{restaurant.name}}</h1>
+    <p class="lead">{{restaurant.description}}</p>
+    <hr>
+    <div class="text-left">
+        <str>Opening time: </str>{{restaurant.opening_time}}
+        <str>   |   </str>       
+        <str>Closing time: </str>{{restaurant.closing_time}}
+    </div>
+  </div>
+</div>
+           
 {%endblock%}
